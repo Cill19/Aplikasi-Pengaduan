@@ -44,32 +44,32 @@ LaporGuys adalah aplikasi pelaporan insiden yang dirancang untuk memudahkan masy
    │   └── firebase_options.dart
    └── main.dart           # Entry Point
 
-Cara Penggunaan
-Laporan Insiden
-Buka aplikasi dan pilih "Laporan Insiden".
-Isi form laporan dengan detail insiden.
-Klik "Kirim" untuk mengirim laporan.
-Panduan Keselamatan
-Pilih "Panduan Keselamatan" dari menu utama.
-Baca panduan yang tersedia untuk berbagai situasi darurat.
-Layanan Darurat
-Pilih "Layanan Darurat" dari menu utama.
-Hubungi kontak darurat yang tersedia sesuai kebutuhan.
-Kontribusi
-Fork repository ini.
-Buat branch baru untuk fitur atau perbaikan Anda (git checkout -b fitur-anda).
-Commit perubahan Anda (git commit -am 'Tambah fitur').
-Push ke branch (git push origin fitur-anda).
-Buat Pull Request.
-Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT. Lihat file LICENSE untuk informasi lebih lanjut.
+# Cara Penggunaan
+   ## Laporan Insiden
+      Buka aplikasi dan pilih "Laporan Insiden".
+      Isi form laporan dengan detail insiden.
+      Klik "Kirim" untuk mengirim laporan.
+   ## Panduan Keselamatan
+      Pilih "Panduan Keselamatan" dari menu utama.
+      Baca panduan yang tersedia untuk berbagai situasi darurat.
+   ## Layanan Darurat
+      Pilih "Layanan Darurat" dari menu utama.
+      Hubungi kontak darurat yang tersedia sesuai kebutuhan.
+# Kontribusi
+   Fork repository ini.
+   Buat branch baru untuk fitur atau perbaikan Anda (git checkout -b fitur-anda).
+   Commit perubahan Anda (git commit -am 'Tambah fitur').
+   Push ke branch (git push origin fitur-anda).
+   Buat Pull Request.
+   Lisensi
+   Proyek ini dilisensikan di bawah lisensi MIT. Lihat file LICENSE untuk informasi lebih lanjut.
 
-Kontak
-Untuk pertanyaan atau dukungan lebih lanjut, silakan hubungi kami di:
+# Kontak
+   Untuk pertanyaan atau dukungan lebih lanjut, silakan hubungi kami di:
 
-Email: aqilbahri1234@gmail.com
+   Email: aqilbahri1234@gmail.com
 
-Terima kasih telah menggunakan LaporGuys! 🚀
+# Terima kasih telah menggunakan LaporGuys! 🚀
 ### Penjelasan
 - **Fitur**: Menjelaskan fitur utama aplikasi.
 - **Teknologi yang Digunakan**: Daftar teknologi yang digunakan dalam pengembangan aplikasi.
@@ -80,5 +80,3 @@ Terima kasih telah menggunakan LaporGuys! 🚀
 - **Lisensi**: Informasi lisensi proyek.
 - **Kontak**: Informasi kontak untuk pertanyaan atau dukungan.
 - **Screenshots**: Tangkapan layar aplikasi untuk memberikan gambaran visual kepada pengguna.
-
-Anda dapat menyesuaikan README ini sesuai kebutuhan proyek Anda dan memastikan semua informasi relevan dan terkini.
