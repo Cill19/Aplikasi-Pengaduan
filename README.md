@@ -21,24 +21,28 @@ LaporGuys adalah aplikasi pelaporan insiden yang dirancang untuk memudahkan masy
    git clone https://github.com/username/LaporGuys.git
    cd LaporGuys
 2. **Install Dependencies**
+   ```sh
    flutter pub get
-3. **Configure Firebase**
-Ikuti petunjuk di Firebase Documentation untuk mengonfigurasi proyek Firebase Anda.
-Salin file google-services.json (untuk Android) dan GoogleService-Info.plist (untuk iOS) ke direktori yang sesuai.
-4. **Run Application**
+4. **Configure Firebase**
+   ```sh
+   Ikuti petunjuk di Firebase Documentation untuk mengonfigurasi proyek Firebase Anda.
+   Salin file google-services.json (untuk Android) dan GoogleService-Info.plist (untuk iOS) ke direktori yang sesuai.
+6. **Run Application**
+   ```sh
    flutter run
-5. **Struktur Proyek**
+8. **Struktur Proyek**
+   ```sh
    lib/
-├── bloc/               # Business Logic Components
-├── ui/                 # User Interface
-│   ├── onboarding.dart
-│   ├── article_detail_screen.dart
-│   ├── detail_pengaduan.dart
-│   └── pengaduan_screen.dart
-├── utils/              # Utilities
-│   ├── routes.dart
-│   └── firebase_options.dart
-└── main.dart           # Entry Point
+   ├── bloc/               # Business Logic Components
+   ├── ui/                 # User Interface
+   │   ├── onboarding.dart
+   │   ├── article_detail_screen.dart
+   │   ├── detail_pengaduan.dart
+   │   └── pengaduan_screen.dart
+   ├── utils/              # Utilities
+   │   ├── routes.dart
+   │   └── firebase_options.dart
+   └── main.dart           # Entry Point
 
 Cara Penggunaan
 Laporan Insiden
