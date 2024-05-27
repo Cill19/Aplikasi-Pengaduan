@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum06/ui/kebijakan_privasi.dart';
+import 'package:praktikum06/ui/layanan_pelanggan.dart';
+import 'package:praktikum06/ui/tentang_kami.dart';
 import 'edit_profile_screen.dart';
+import 'personal_info_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -44,35 +48,55 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     icon: Icons.person,
                     text: 'Informasi Pribadi',
                     onTap: () {
-                      // Action for Informasi Pribadi
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalInfoScreen(),
+                        ),
+                      );
                     },
                   ),
                   ProfileMenuItem(
                     icon: Icons.info,
                     text: 'Tentang Kami',
                     onTap: () {
-                      // Action for Tentang Kami
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AboutUsScreen(),
+                        ),
+                      );
                     },
                   ),
                   ProfileMenuItem(
                     icon: Icons.support,
                     text: 'Layanan Pelanggan',
                     onTap: () {
-                      // Action for Layanan Pelanggan
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CustomerServiceScreen(),
+                        ),
+                      );
                     },
                   ),
                   ProfileMenuItem(
                     icon: Icons.privacy_tip,
                     text: 'Kebijakan Privasi',
                     onTap: () {
-                      // Action for Kebijakan Privasi
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PrivacyPolicyScreen(),
+                        ),
+                      );
                     },
                   ),
                   ProfileMenuItem(
                     icon: Icons.logout,
                     text: 'Keluar',
                     onTap: () {
-                      // Action for Keluar
+                      _confirmLogout(context);
                     },
                   ),
                 ],
@@ -103,6 +127,32 @@ class _ProfileScreenState extends State<ProfileScreen> {
         _email = result['email']!;
       });
     }
+  }
+
+  void _confirmLogout(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Konfirmasi Keluar"),
+          content: Text("Apakah Anda yakin ingin keluar?"),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Tutup dialog
+              },
+              child: Text("Batal"),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text("Keluar"),
+            ),
+          ],
+        );
+      },
+    );
   }
 }
 

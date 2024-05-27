@@ -163,21 +163,48 @@ class PanduanDetailScreen extends StatelessWidget {
         child: ListView.builder(
           itemCount: steps.length,
           itemBuilder: (context, index) {
-            return Card(
-              margin: EdgeInsets.symmetric(vertical: 8),
-              child: ListTile(
-                leading: CircleAvatar(
-                  backgroundColor: Colors.blueAccent,
-                  child: Text(
-                    '${index + 1}',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-                title: Text(steps[index]),
-              ),
-            );
+            return buildStepCard(index + 1, steps[index]);
           },
         ),
+      ),
+    );
+  }
+
+  Widget buildStepCard(int stepNumber, String stepDescription) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            spreadRadius: 2,
+            blurRadius: 5,
+          ),
+        ],
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundColor: Colors.blueAccent,
+            child: Text(
+              '$stepNumber',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          SizedBox(width: 16),
+          Expanded(
+            child: Text(
+              stepDescription,
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

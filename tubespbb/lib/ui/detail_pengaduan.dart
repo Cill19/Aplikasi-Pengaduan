@@ -73,14 +73,23 @@ class _DetailPengaduanState extends State<DetailPengaduan> {
             ),
             SizedBox(height: 20),
             // Tambahkan tombol untuk membuka WhatsApp
-            ElevatedButton(
+            ElevatedButton.icon(
               onPressed: () {
                 // Dapatkan nilai teks dari TextFormField menggunakan kontroller
                 final text = _textController.text;
                 // Panggil method untuk membuka URL WhatsApp dengan pesan yang dimasukkan oleh pengguna
                 _openWhatsApp(context, text);
               },
-              child: Text('Kirim via WhatsApp'),
+              icon: Image.asset(
+                'assets/images/wa.png',
+                width: 24,
+                height: 24,
+              ), // Ikon dari aset
+              label: Text('Kirim via WhatsApp'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor:
+                    Color(0xFF25D366), // Warna hijau seperti logo WhatsApp
+              ),
             ),
           ],
         ),
